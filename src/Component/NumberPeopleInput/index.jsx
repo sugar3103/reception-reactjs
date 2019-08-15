@@ -24,7 +24,7 @@ export default function NumberPeopleInput() {
                 <div className="row">
                     <div className="number-people">
                         <div className="black-square">
-                            <p>来客人数を入力してください</p>
+                            <h1>来客人数を入力してください</h1>
                         </div>
                     </div>
                 </div>

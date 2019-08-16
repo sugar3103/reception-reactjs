@@ -1,30 +1,21 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import NumberPeopleSmall from '../NumberPeopleSmall';
+import Header from '../Header';
 
 export default function NumberPeopleInput() {
+    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     return (
         <>
-            <header>
+            <Header />
+            <section className="container-fluid">
                 <div className="row">
-                    <div className="col-md-12 headers">
-                        <Link to="/">
-                            <button className="arrow-back">
-                                <img src="./assets/arrow-back.png" alt="arrow-back" />
-                                戻る
-                            </button>
-                        </Link>
-                        <img className="header-logo" src="./assets/people/logo-4.png" alt="logo-4" />
-                        <button className="header-button-right">
-                            キャンセル
-                        </button>
-                    </div>
-                </div>
-            </header>
-            <section>
-                <div className="row">
-                    <div className="number-people">
+                    <div className="col-md-12 number-people">
                         <div className="black-square">
                             <h1>来客人数を入力してください</h1>
+                            <div className="col-md-6 people-1-9">
+                                {array.map((element, index) => <NumberPeopleSmall thutu={element} key={index} />)}
+                            </div>
                         </div>
                     </div>
                 </div>

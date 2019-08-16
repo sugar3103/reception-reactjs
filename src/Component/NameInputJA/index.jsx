@@ -4,7 +4,7 @@ import Char from "./char";
 import Header from '../Header';
 
 
-export default function KeyBoard() {
+export default function NameInputJA() {
 
     const abcChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
         , '!', '?', '#', '$', '%', '&', '@', '+', '-', '=', '_', '*', '/', "'", ',', '.', ':', ';', '(', ')', '[', ']'
@@ -51,7 +51,7 @@ export default function KeyBoard() {
     }
     return (
         <>
-            <Header />
+            <Header link={"/lang=ja"} return={"戻る"} cancel={"キャンセル"}/>
             <section>
                 <div className="container-fluid">
                     <div className="row keyboard-page">

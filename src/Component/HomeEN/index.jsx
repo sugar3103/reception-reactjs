@@ -15,8 +15,8 @@ export default function HomeEN(props) {
                             <i className="fas fa-globe"></i> 日本語</button>
                         </Link>
                     </div>
-                    <div className="col-md-8 home-small-1 img-100 home-background-stats">
-                        <Link to="/numberOfPeople">
+                    <div className="col-md-8 home-small-1 img-100 home-background-stats no-padding">
+                        <Link to="/numberOfPeople=en">
                             <button className="btn-home-square">
                                 <img src="./assets/Home/calender.png" style={{ width: "150px" }} alt="calender" />
                                 <p>Visit with</p>
@@ -25,17 +25,17 @@ export default function HomeEN(props) {
                             </button>
                         </Link>
                     </div>
-                    <div className="col-md-2 home-small-2 img-100 home-background-stats">
-                        <a href="_blank">
+                    <div className="col-md-2 home-small-2 img-100 home-background-stats no-padding">
+                        <Link to="/company-name-en">
                             <button className="btn-home-square">
                                 <img src="./assets/Home/calender.png" style={{ width: "100px" }} alt="calender" />
                                 <p>Visit without</p>
                                 <p>Reservation</p>
                                 <div className="underline"></div>
                             </button>
-                        </a>
+                        </Link>
                     </div>
-                    <div className="col-md-2 home-small-3 img-100 home-background-stats">
+                    <div className="col-md-2 home-small-3 img-100 home-background-stats no-padding">
                         <a href="_blank">
                             <button className="btn-home-square">
                                 <img src="./assets/Home/meetings.png" style={{ width: "100px" }} alt="meetins" />
@@ -45,7 +45,7 @@ export default function HomeEN(props) {
                             </button>
                         </a>
                     </div>
-                    <div className="col-md-2 home-small-4 img-100 home-background-stats">
+                    <div className="col-md-2 home-small-4 img-100 home-background-stats no-padding">
                         <a href="_blank">
                             <button className="btn-home-square">
                                 <img src="./assets/Home/info-table.png" style={{ width: "100px" }} alt="info-table" />
@@ -55,9 +55,9 @@ export default function HomeEN(props) {
                             </button>
                         </a>
                     </div>
-                    <div className="col-md-2 home-small-5 img-100 home-background-stats">
+                    <div className="col-md-2 home-small-5 img-100 home-background-stats no-padding">
                         <a href="_blank">
-                            <Link to="/delivery">
+                            <Link to="/delivery=en">
                                 <button className="btn-home-square">
                                     <img src="./assets/Home/trucks.png" style={{ width: "100px" }} alt="trucks" />
                                     <p>To</p>

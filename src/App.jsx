@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { withTranslation, Trans } from 'react-i18next';
+
 import HomeEN from './Component/HomeEN';
 import HomeJA from './Component/HomeJA';
 import NumberPeopleInputJA from './Component/NumberPeopleInputJA';
@@ -12,18 +14,20 @@ import CompanyNameInput from "./Component/CompanyNameInput";
 import ComapanyNameInputEN from "./Component/CompanyNameInput/en"
 import NameInputEN from "./Component/NameInputEN";
 import NameInputJA from "./Component/NameInputJA";
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-function App() {
+function App(props) {
+  
   return (
     <Router>
 
       <Switch>
-        <Route path="/" exact component={HomeEN} />
+        <Route path="/" exact render={()=> (<HomeEN {...props}/>)}/>
         <Route path="/numberOfPeople=ja" component={NumberPeopleInputJA} />
         <Route path="/numberOfPeople=en" component={NumberPeopleInputEN} />
         <Route path="/lang=ja" component={HomeJA} />
-        <Route path="/delivery=en" component={DeliveryEN} />
+        <Route path="/delivery=en" exact render={()=>(<DeliveryEN {...props}/>)} />
         <Route path="/delivery=ja" component={DeliveryJA} />
         <Route path="/name-input=en" component={NameInputEN} />
         <Route path="/name-input=ja" component={NameInputJA} />
@@ -36,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default withTranslation('common')(App);

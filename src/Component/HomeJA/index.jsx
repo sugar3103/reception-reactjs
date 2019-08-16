@@ -35,7 +35,7 @@ export default function HomeJA(props) {
                         </Link>
                     </div>
                     <div className="col-md-2 home-small-3 img-100 home-background-stats">
-                        <Link to="/delivery-ja">
+                        <Link to="/delivery=ja">
                             <button className="btn-home-square">
                                 <img src="./assets/Home/meetings.png" style={{ width: "100px" }} alt="meetins" />
                                 <p></p>
@@ -46,7 +46,7 @@ export default function HomeJA(props) {
                         </Link>
                     </div>
                     <div className="col-md-2 home-small-4 img-100 home-background-stats">
-                        <a href="_blank">
+                        <Link to="/delivery=ja">
                             <button className="btn-home-square">
                                 <img src="./assets/Home/info-table.png" style={{ width: "100px" }} alt="info-table" />
                                 <p></p>
@@ -54,7 +54,7 @@ export default function HomeJA(props) {
 
                                 <div className="underline"></div>
                             </button>
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-md-2 home-small-5 img-100 home-background-stats">
                         <Link to="/delivery=ja">

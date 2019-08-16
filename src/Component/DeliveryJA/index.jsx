@@ -8,7 +8,7 @@ export default function DeliveryJA() {
             <Header link={"/lang=ja"} return={"戻る"} cancel={"キャンセル"}/>
             <section className="container-fluid">
                 <div className="row">
-                    <div className="col-md-12 delivery">
+                    <div className="col-md-12 delivery no-padding">
                         <div className="black-square">
                             <div className="delivery-content">
                                 <img src="./assets/Home/trucks.png" style={{ width: "122px" }} alt="trucks" />
